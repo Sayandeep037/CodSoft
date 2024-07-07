@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(24, 30, 30);
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+.container1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.navlist {
+    display: flex;
+    gap: 3.6rem;
+    height: 17vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-decoration: uppercase;
+    font-size: 1rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.container2,
+.container3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container3 {
+    padding-right: 5rem;
+}
+
+.icons .fa-brands {
+    color: lightgray;
+    font-size: 1.9rem;
+
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(white, purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 2rem;
+    position: fixed;
+
+}
+
+.content {
+    margin-left: 7rem;
+}
+
+.content .intro {
+    font-size: 1.7rem;
+    color: beige;
+}
+
+.content .intro span {
+    color: rgb(200, 6, 116);
+
+}
+
+.content h1 {
+    font-size: 4.7rem;
+    color: rgb(188, 2, 188);
+}
+
+.content .detail {
+    font-size: 1.3rem;
+    color: azure;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 2rem;
+}
+
+.button-container button {
+    border: .1rem solid purple;
+    font-size: 1.1em;
+    padding: .8rem 1.2rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#button1 {
+    background-color: rgb(188, 2, 188);
+
+}
+
+#button2 {
+    background-color: transparent;
+    color: rgb(200, 11, 200);
+    margin-left: 2rem;
+}
+
+#button1:hover {
+    background-color: transparent;
+    color: rgb(200, 11, 200);
+
+}
+
+#button2:hover {
+    background-color: rgb(188, 2, 188);
+    color: black;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+
+    border-radius: 50%;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(transparent 50%);
+    width: 38rem;
+
+}
+
+.circle:nth-child(2) {
+    background-image: url("sayadeep.jpg");
+    width: 27rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .2rem solid white;
+    box-shadow: 0 0 1rem white,
+        inset 0 0 1rem grey,
+        0 0 3rem purple,
+        inset 0 0 2rem rgb(74, 1, 74),
+        0 0 3rem purple,
+        inset 0 0 2rem purple;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+
+}
+
+.navlist li a::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+}
+
+.navlist li a:hover::after {
+    transform: scaleX(1);
+}
+
+.content4 {
+    height: 100vh;
+    bottom: 50px;
+    position: absolute;
+    top: 90%;
+    margin-left: 7rem;
+}
+
+.content4 h2 {
+    color: rgb(200, 6, 116);
+    font-size: 3.2rem;
+
+}
+
+.content4 .detail2 {
+    font-size: 1.3rem;
+    color: azure;
+    max-width: 90rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 2rem;
+}
+
+.content5 {
+    height: 100vh;
+    bottom: 50px;
+    position: absolute;
+    top: 170%;
+    margin-left: 7rem;
+}
+
+.content5 h2 {
+    color: rgb(200, 6, 116);
+    font-size: 3.2rem;
+
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 40px;
+    padding: 50px;
+    box-shadow: 0 0 20px 5px #007fff;
+
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292929;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 310px;
+    transition: 0.4s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px)scale(1.03);
+
+    box-shadow: 0 0 20px 5px #bb04c5;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-content {
+    text-align: center;
+}
+
+.skill-content h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #007fff;
+}
+
+.skill-content p {
+    font-size: 14px;
+    color: white;
+}
+
+
+.container h2 {
+    color: rgb(200, 6, 116);
+    font-size: 3.2rem;
+    margin-left: 7rem;
+    position: absolute;
+    top: 250%;
+
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 40px;
+    padding: 50px;
+    height: 100vh;
+    bottom: 50px;
+    position: absolute;
+    top: 260%;
+    margin-left: 4.7rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #292929;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1420px;
+    height: 590px;
+
+
+}
+
+.project:hover {
+    transform: translateY(-10px)scale(1.03);
+
+    box-shadow: 0 0 20px 5px #04ab6b;
+}
+
+.project-content h3 {
+    margin: 10px 0 5px;
+    font-size: 40px;
+    color: #007fff;
+    text-align: center;
+
+
+}
+
+.project-content p {
+    font-size: 35px;
+    color: white;
+    margin-left: 2rem;
+}
+
+
+
+.project img {
+    margin-right: 1em;
+    width: 450px;
+    height: 450px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #555;
+}
+
+.downloads {
+    top: 437%;
+    margin-left: 7rem;
+    position: absolute;
+
+}
+
+.downloads h2 {
+    color: #007fff;
+}
+
+.Contact-container {
+    top: 466%;
+    margin-left: 7rem;
+    position: absolute;
+}
+
+.Contact-container h2 {
+    color: #007fff;
+}
+
+.Contact-container p {
+    font-size: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    top: 487%;
+    bottom: 0;
+}
